@@ -32,3 +32,22 @@
 접두사를 통해 2, 8, 16진수를 표현할 수 있다. 16진수는 리터럴 앞에 '0x', '0X'를 붙이고, 8진수는 '0', 2진수는 '0b'를 붙인다.  
 또한 정수형 리터럴은 숫자 중간에 구분자를 넣어 숫자를 편하게 읽을 수 있다. 100_000_000_000L = 100000000000L  
 실수형 리터럴은 float타입은 'f'를 double타입은 'd'를 붙인다. 정수형과 마찬가지로 기본형인 double의 'd'는 생략 가능하는 float타입은 생략 불가능하다.  
+### 기본형(primitive type)과 참조형(reference type)
+기본형 변수는 실제 값(data)을 저장한다. 반면 참조형 변수는 어떤 값이 저장되어 있는 주소(memory address)를 저장한다. 참조형 변수간에는 연산을 할 수 없다.  
+
+printf()의 지시자  
+|지시자|설명|
+|---|---|
+|%d|10진수(decimal)|
+|%x|16진수(hexa-decimal)|
+|%f|소수(floating)|
+|%c|문자(character)|
+|%s|문자열(string)|  
+  
+### 입력받기  
+    import java.util.Scanner; // Scanner class import
+    Scanner scanner = new Scanner(System.in); // 객체 생성
+    String input = scanner.nextLine(); // 문자열로 입력받기
+    int num1 = Integer.parseInt(input); // 문자열을 int타입으로 변환
+    int num2 = scanner.nextInt(); // 정수로 입력받기  
+### 
